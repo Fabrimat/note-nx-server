@@ -21,6 +21,7 @@ This file will sync to all your devices using your normal sync method, so all yo
 |-----------------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | BASE_WEB_URL                | https://example.com | The base public URL for your server.                                                                                                     |
 | HASH_SALT                   | Any random string   |                                                                                                                                          |
+| UPLOAD_KEY                  |                     | *OPTIONAL.* A secret key required for all file uploads. If set, clients must provide this in the `x-sharenote-upload-key` header.        |
 | MAXIMUM_UPLOAD_SIZE_MB      | 5                   | The maximum allowed size for user uploads in megabytes (MB).                                                                             |
 | FOLDER_PREFIX               | 0                   | *OPTIONAL.* Set this to `1` or `2` if you want user files to be split into subfolders based on the first *N* characters of the filename. |
 | CLOUDFLARE_TURNSTILE_KEY    |                     | *OPTIONAL.* If you want to use Turnstile to show a captcha when someone creates an account.                                              |
